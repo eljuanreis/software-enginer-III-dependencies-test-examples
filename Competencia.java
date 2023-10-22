@@ -7,6 +7,7 @@ public class Competencia {
 	private int mes;
 	private double totalDesp;
 	private Set<Despesa> desps;
+	private Set<CompetenciaApartamentos> comps;
 	
 	public int getAno() {
 		return ano;
@@ -38,5 +39,13 @@ public class Competencia {
 	
 	public void setDesps(Set<Despesa> desps) {
 		this.desps = desps;
+	}
+	
+	public Set<CompetenciaApartamentos> getComps() {
+		return comps;
+	}
+
+	public void setComps(Set<CompetenciaApartamentos> comps) {
+		this.comps = comps;
 	}
 }

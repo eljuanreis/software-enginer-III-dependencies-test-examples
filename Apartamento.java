@@ -1,10 +1,13 @@
 package br.edu.fatec;
 
+import java.util.Set;
+
 public class Apartamento {
 	private int numero;
 	private int qntdQuartos;
 	private Proprietario proprietario;
 	private Inquilino inquilino;
+	private Set<CompetenciaApartamentos> comps;
 	
 	public int getNumero() {
 		return numero;
@@ -36,5 +39,13 @@ public class Apartamento {
 
 	public void setInquilino(Inquilino inquilino) {
 		this.inquilino = inquilino;
+	}
+	
+	public Set<CompetenciaApartamentos> getComps() {
+		return comps;
+	}
+
+	public void setComps(Set<CompetenciaApartamentos> comps) {
+		this.comps = comps;
 	}
 }

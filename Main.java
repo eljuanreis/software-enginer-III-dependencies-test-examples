@@ -52,5 +52,12 @@ public class Main {
 		CompetenciaApartamentos cap = new CompetenciaApartamentos();
 		cap.setAps(aps);
 		cap.setCompetencias(competencias);
+		
+		//N:N
+		Set<CompetenciaApartamentos> compAp = new HashSet<CompetenciaApartamentos>();
+		compAp.add(cap);
+
+		comp.setComps(compAp);
+		ap.setComps(compAp);
 	}
 }
